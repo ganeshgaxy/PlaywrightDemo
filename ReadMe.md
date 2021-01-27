@@ -12,4 +12,6 @@ This repo is a simple POC to demo Playwright with Typescript and Cucumber
 - `npm run test` to execute the Scenarios
 - `npm run record` to record and generate scripts
 
+Added PageWright-Fluent : https://github.com/hdorgeval/playwright-fluent/blob/HEAD/docs/playwright-fluent.api.md
+
 Happy Scripting!!!

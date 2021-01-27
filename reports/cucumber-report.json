@@ -1,0 +1,79 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "a-simple-feature;a-simple-scenario",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "A Simple scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Open 'www.wikipedia.org'",
+            "match": {
+              "location": "scripts/Sample.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3574000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "Search for 'Automation'",
+            "match": {
+              "location": "scripts/Sample.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Click on Search",
+            "match": {
+              "location": "scripts/Sample.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2777000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 340000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "a-simple-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "A Simple feature",
+    "tags": [],
+    "uri": "features/Sample.feature"
+  }
+]

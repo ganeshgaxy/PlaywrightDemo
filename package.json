@@ -5,15 +5,26 @@
   "main": "index.js",
   "scripts": {
     "record": "npx playwright codegen www.wikipedia.org",
-    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require framework/test.setup.ts --require scripts/**/*.ts"
+    "steps-check": "cucumber-js features/**/*.feature --require-module ts-node/register --require framework/test.setup.ts --require scripts/**/*.ts -f summary -f progress-bar --dry-run",
+    "steps-usage": "cucumber-js features/**/*.feature --require-module ts-node/register --require framework/test.setup.ts --require scripts/**/*.ts -f usage --dry-run",
+    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require framework/test.setup.ts --require scripts/**/*.ts",
+    "report": "ts-node reporters/cucumber-html-reporter.ts",
+    "multiple-report": "ts-node reporters/multiple-cucumber-html-reporter.ts"
   },
   "author": "Ganeshan Manickam",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^7.0.0",
+    "@types/chai": "^4.2.14",
+    "@types/cucumber-html-reporter": "^5.0.1",
     "@types/node": "^14.14.22",
+    "chai": "^4.2.0",
+    "cucumber-html-reporter": "^5.3.0",
+    "multiple-cucumber-html-reporter": "^1.18.0",
     "playwright": "^1.8.0",
+    "playwright-fluent": "^1.18.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
-  }
+  },
+  "dependencies": {}
 }
